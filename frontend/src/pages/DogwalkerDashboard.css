@@ -1,0 +1,173 @@
+.dashboard-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dashboard-header {
+  margin-bottom: 24px;
+}
+
+.dashboard-header h2 {
+  margin-bottom: 16px;
+}
+
+.dashboard-tabs {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tab {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #666;
+  border-bottom: 2px solid transparent;
+}
+
+.tab.active {
+  color: #007bff;
+  border-bottom-color: #007bff;
+}
+
+.info-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.info-card p {
+  margin: 12px 0;
+}
+
+.status-active {
+  color: #080b0a;
+  font-weight: 500;
+}
+
+.services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-service-btn {
+  background: #b7c1cb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-service-form {
+  background: #f5f5f5;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.add-service-form select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-service-form button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-service-form button:first-of-type {
+  background: #666;
+  color: white;
+}
+
+.services-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.services-table th {
+  background: #f5f5f5;
+  padding: 12px;
+  text-align: left;
+}
+
+.services-table td {
+  padding: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.remove-btn {
+  background: #dd9797;
+  color: white;
+  border: none;
+  padding: 4px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.empty-services {
+  text-align: center;
+  padding: 40px;
+  color: #888;
+}
+
+.add-service-form select,
+.add-service-form input {
+  padding: 12px 12px;
+}
+
+/* Отзывы */
+.feedbacks-section {
+  margin-top: 30px;
+}
+
+.feedbacks-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.feedbacks-table th {
+  background: #f5f5f5;
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+
+.feedbacks-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+}
+
+.feedbacks-table tr:hover {
+  background: #fafafa;
+}
+
+.rating {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1814;
+}
+
+.feedback-text {
+  max-width: 300px;
+  word-wrap: break-word;
+  line-height: 1.4;
+}
