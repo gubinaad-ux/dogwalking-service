@@ -47,7 +47,7 @@ BEGIN
         FROM booking 
         WHERE booking_id = p_booking_id
     )
-    AND d_walker_rating  5.0;
+    AND d_walker_rating < 5.0;
     
     COMMIT;
 END;
