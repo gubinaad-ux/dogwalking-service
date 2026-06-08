@@ -3,11 +3,13 @@ CREATE OR REPLACE FUNCTION default_pending()
 RETURNS TRIGGER AS $$
 BEGIN
     IF NEW.book_status IS NULL OR TRIM(NEW.book_status) = '' THEN
-        NEW.book_status = 'В ожидании';
+        NEW.book_status := 'pending';
     END IF;
     RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
+
+DROP TRIGGER IF EXISTS set_default_status ON booking;
 
 CREATE TRIGGER set_default_status
 BEFORE INSERT ON booking
